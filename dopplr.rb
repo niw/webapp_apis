@@ -63,6 +63,6 @@ d.trips_info(:traveller => ARGV.shift) do |xml|
     puts "#{start.strftime("%Y-%m-%d")} to #{finish.strftime("%Y-%m-%d")} in #{city} for #{d} days"
   end
   days.keys.sort.each do |k|
-    puts "In #{k}, you are #{days[k]} days are not in your home town (#{(days[k].to_f / 365 * 100).to_i} %)"
+    puts "In #{k}, you are not in your home town for #{days[k]} days (#{(days[k].to_f / 365 * 100).to_i} %)"
   end
 end
